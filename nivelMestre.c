@@ -127,7 +127,7 @@ int main(){
     printf("PIB: %f bilhões de reais \n", pib2);
     printf("Número de Pontos Turísticos: %d\n", numPt_turistico2);
     printf("Densidade Popilacional: %f hab/km²\n", densipop2);
-    printf("PIB per Capita %f reais", pibpercap2);
+    printf("PIB per Capita %f reais \n", pibpercap2);
     
 
     //exibir resultado da comparação e carta vencedora
@@ -142,7 +142,6 @@ int main(){
     }else{
         printf("Resultado: Carta 2 (%s) venceu!", nomeCidade2);
     }
-    printf("Resultado: Carta variavel (variavel) venceu!");
-
+    
 
 }
