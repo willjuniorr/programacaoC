@@ -123,9 +123,17 @@ int main(){
             printf("%s" "VS" "%s \n", estado1, estado2);
             printf("Atributo: %s \n", "variavel");
             printf("Carta %d: %d Carta %d: %d \n", codigoCarta1, populacao1, codigoCarta2, populacao2);
-            printf("Carta Vencedora: %d \n", codigoCarta1);
-            printf("Empate");
-        }else
+            printf("Carta Vencedora: %d \n", codigoCarta1);  
+        }else if (populacao1 < populacao2)
+        {
+            printf("%s" "VS" "%s \n", estado1, estado2);
+            printf("Atributo: %s \n", "variavel");
+            printf("Carta %d: %d Carta %d: %d \n", codigoCarta1, populacao1, codigoCarta2, populacao2);
+            printf("Carta Vencedora: %d \n", codigoCarta2);
+        }else 
+        {
+            printf("Empate!");
+        }
         break;
     
     default:
