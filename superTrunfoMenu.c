@@ -135,6 +135,25 @@ int main(){
             printf("Empate!"); //Resultado empatado
         }
         break;
+
+    case 2:
+        if (area1 > area1) //vitoria Carta 01
+        {
+            printf("%s" "VS" "%s \n", estado1, estado2);
+            printf("Atributo: População");
+            printf("Carta %d: %d Carta %d: %d \n", codigoCarta1, area1, codigoCarta2, area2);
+            printf("Carta Vencedora: %d \n", codigoCarta1);  
+        }else if (area1 < area2) //Vitória Carta 02
+        {
+            printf("%s" "VS" "%s \n", estado1, estado2);
+            printf("Atributo: Área em KM²");
+            printf("Carta %d: %d Carta %d: %d \n", codigoCarta1, area1, codigoCarta2, area2);
+            printf("Carta Vencedora: %d \n", codigoCarta2);
+        }else 
+        {
+            printf("Empate!"); //Resultado empatado
+        }
+        break;
     
     default:
         break;
