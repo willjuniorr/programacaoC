@@ -118,21 +118,21 @@ int main(){
     switch (atributo)
     {
     case 1:
-        if (populacao1 > populacao2)
+        if (populacao1 > populacao2) //vitoria Carta 01
         {
             printf("%s" "VS" "%s \n", estado1, estado2);
-            printf("Atributo: %s \n", "variavel");
+            printf("Atributo: População");
             printf("Carta %d: %d Carta %d: %d \n", codigoCarta1, populacao1, codigoCarta2, populacao2);
             printf("Carta Vencedora: %d \n", codigoCarta1);  
-        }else if (populacao1 < populacao2)
+        }else if (populacao1 < populacao2) //Vitória Carta 02
         {
             printf("%s" "VS" "%s \n", estado1, estado2);
-            printf("Atributo: %s \n", "variavel");
+            printf("Atributo: População");
             printf("Carta %d: %d Carta %d: %d \n", codigoCarta1, populacao1, codigoCarta2, populacao2);
             printf("Carta Vencedora: %d \n", codigoCarta2);
         }else 
         {
-            printf("Empate!");
+            printf("Empate!"); //Resultado empatado
         }
         break;
     
