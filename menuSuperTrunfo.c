@@ -109,7 +109,10 @@ int main(){
     printf("\n"); //pula 1 linha
 
     // Menu de seleção de atributo à ser comparado
+
     int comparar;
+    int vencedor;
+    char empate;
 
     printf("Escolha o atributo para comparação");
     printf("1. População");
@@ -119,6 +122,75 @@ int main(){
     printf("5. Densidade Populacional");
     printf("6. PIB per Capita");
     scanf("%d", &comparar);
+
+    switch (comparar)
+    {
+    case 1:
+        if (populacao1 > populacao2){
+            vencedor = codigoCarta1;
+        }else if(populacao1 < populacao2){
+            vencedor = codigoCarta2;
+        }else(populacao1 == populacao2){
+            empate = ()"Atributo empatado!")
+        }
+        break;
+
+        case 2:
+        if (area1 > area2){
+            vencedor = codigoCarta1;
+        }else if(area1 < area2){
+            vencedor = codigoCarta2;
+        }else(area1 == area2){
+            empate = ("Atributo empatado!")
+        }
+        break;
+
+        case 3:
+        if (pib1 > pib2){
+            vencedor = codigoCarta1;
+        }else if(pib1 < pib2){
+            vencedor = codigoCarta2;
+        }else(pib1 == pib2){
+            empate = ("Atributo empatado!")
+        }
+        break;
+
+        case 4:
+        if (numPt_turistico1 > numPt_turistico2){
+            vencedor = codigoCarta1;
+        }else if(numPt_turistico1 < numPt_turistico2){
+            vencedor = codigoCarta2;
+        }else(numPt_turistico1 == numPt_turistico2){
+            empate = ("Atributo empatado!")
+        }
+        break;
+
+        case 5:
+        if (densipop1 > densipop2){
+            vencedor = codigoCarta1;
+        }else if(densipop1 < densipop2){
+            vencedor = codigoCarta2;
+        }else(densipop1 == densipop2){
+            empate = ("Atributo empatado!")
+        }
+        break;
+
+        case 4:
+        if (pibpercap1 > pib2){
+            vencedor = codigoCarta1;
+        }else if(pibpercap1 < pibpercap2){
+            vencedor = codigoCarta2;
+        }else(pibpercap1 == pibpercap2){
+            empate = ("Atributo empatado!")
+        }
+        break;
+    
+    default:{
+        printf("Opção inválida! Jogue novamente!");
+    }
+        break;
+    }
+    
 
 
 //Exibe a Carta 1
